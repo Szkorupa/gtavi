@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Grand Theft Auto VI</title>
+</head>
+<body>
+    <section id="hero">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#jason">Jason</a></li>
+                    <li><a href="#characters">Postacie</a></li>
+                    <li id="mtext"><a href="#hero">Strona Główna</a></li>
+                    <li><a href="#trailer">Prezentacja</a></li>
+                    <li><a href="#lucia">Lucia</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <div class="row">
+            <div class="hero_left">
+                <div class="main-text">
+                    <h1>Grand Theft Auto VI</h1>
+                </div>
+                <div class="desc">
+                    <h3>DOSTĘPNE WKRÓTCE<br> ZA:</h3>
+                </div>
+                <div class="timer">
+                    <span><h3 id="daysRemaining"> </h3></span>
+                </div>
+                <div class="buttons">
+                    <button href="#">OBEJRZYJ ZWIASTUN</button>
+                </div>
+            </div>
+            </div>
+            <div class="hero_right">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAILER -->
+
+    <section id="trailer">
+        <div class="trailer">
+            <div class="trailerbox">
+                <iframe width="1440" height="720" src="https://www.youtube.com/embed/QdBZY2fkU-0?si=myvW5JrWZgd978Yz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHARACTERS -->
+
+    <section id="characters">
+        <div class="content">
+        <div class="htext">
+            <h1 id="CHARS">CHARACTERS</h1>
+        </div>
+        <div class="row2">
+            <div class="char_left">
+                <a href="#lucia"><img src="charleft.jpg"></a>
+                <div class="overlay-text"><h2>Lucia</h2></div>
+            </div>
+            <div class="char_right">
+                <a href="#jason"><img src="charright.jpg"></a>
+                <div class="overlay-text"><h2>Jason</h2></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- LUCIA -->
+
+    <section id="lucia">
+        <div class="lucia">
+            <div class="lucia_left">
+                <div class="char_imagebox">
+                    <img src="character1.png" class="char_photo">
+                </div>
+            </div>
+            <div class="lucia_right">
+                <div class="char_title">
+                    <h1>Lucia</h1>
+                </div>
+                <div class="char_desc">
+                    <h3>Lucia is a female criminal, doing her time at<br> a prison complex in the State of Leonida in the mid-2020s<br>
+                        for an unknown crime.
+                    </h3>
+                </div>
+                <div class="char_date">
+                    <h4>Main Protagonist</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JASON -->
+
+    <section id="jason">
+        <div class="jason">
+            <div class="jason_right">
+                <div class="char_title">
+                    <h1>Jason</h1>
+                </div>
+                <div class="char_desc">
+                    <h3>Jason - unkown information. Error 303
+                    </h3>
+                </div>
+                <div class="char_date">
+                    <h4>2nd Main Protagonist</h4>
+                </div>
+            </div>
+            <div class="jason_left">
+                <div class="char_imagebox">
+                    <img src="character2.png" class="char_photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="line1">
+                <div class="footer_menu">
+                <a href="hero">Strona Główna</a>
+                <a href="trailer">Trailer</a>
+                <a href="characters">Characters</a>
+                <a href="lucia">Lucia</a>
+                <a href="jason">Jason</a>
+                </div>
+            </div>
+            <div class="line3">
+                <div class="signature">
+                    <p id="signature">Maksymilian Szkorupa &copy;</p>
+                </div>
+            </div>
+            <div class="line2">
+                <div class="socials">
+                    <a href="https://www.facebook.com/maksymilian.szkorupa/">Facebook</a>
+                    <a href="https://www.instagram.com/szkorupaa/">Instagram</a>
+                    <a href="https://github.com/szkorupa">Github</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="timer.js"></script>
+</body>
+</html>

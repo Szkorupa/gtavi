@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #0B0B0E;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    width: 200px;
+    height: 100%;
+    text-align: center;
+}
+
+a {
+    color: #FFFBFA;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+a:hover {
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: .5s;
+}
+
+#mtext {
+    border-left: 2px solid #FFFBFA;
+    border-right: 2px solid #FFFBFA;
+}
+
+#hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden; /* Dodano overflow: hidden */
+    border-bottom: 2px solid #FFFBFA;
+
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgba(11, 11, 14, 0.85), rgba(15, 15, 15, 0.4)), url("gtabackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.hero{
+    display: flex;
+    height: 92vh;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1, h2, h3{
+    color: #FFFBFA;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: 300;
+    color: #FFFBFA;
+    text-shadow: 3px 0px 0 #F27DFD;
+    font-size: 3.8rem;
+}
+h3{
+    font-size: 2.2rem;
+}
+
+h4{
+    font-size: 1.6rem;
+    color: #FFFBFA;
+    font-style: italic;
+}
+
+span > h3{
+    text-decoration: underline;
+}
+
+.hero_left, .hero_right{
+    width: 100%;
+    height: 500px;
+}
+
+.main-text{
+    width: 100%;
+}
+
+.desc{
+    width: 100%;
+    padding-top: 2vh;
+}
+
+.buttons{
+    padding-top: 50px;
+}
+
+button{
+    background-color: transparent;
+    box-shadow: none;
+    color: #FFFBFA;
+    font-weight: 600;
+    font-size: 2.2rem;
+    border: 2px solid white;
+    padding: 10px 50px;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: #FFFBFA;
+    color: #0B0B0E;
+    transition: .5s;
+}
+
+
+/* Trailer */
+
+#trailer {
+    height: 100vh;
+    background: linear-gradient(rgba(11, 11, 14, 0.95), rgba(15, 15, 15, 0.95)), url("trailerbg.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+.trailer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.trailerbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CHAR */
+
+#characters{
+    height: 100vh;
+    background-color: #0B0B0E;
+    border-bottom: 2px solid #FFFBFA;
+    border-top: 2px solid #FFFBFA;
+}
+
+.htext{
+    height: 10vh;   
+    text-align: center;
+}
+
+#CHARS{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-shadow: none;
+    padding: 4vh 0 0 0;
+}
+
+.content{
+    height: 100vh;
+}
+
+.row2{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.char_left, .char_right{
+    width: 100%;
+    position: relative;
+}
+
+.char_left > a > img{
+    width: 400px;
+    height: 600px;
+    border-radius: 25px;
+    transition: .5s;
+
+}
+.char_right > a > img{
+    width: 400px;
+    height: 600px;
+    border-radius: 25px;
+    transition: .5s;
+
+}
+
+.char_left > a > img:hover{
+    opacity: 50%;
+    transition: .5s;
+    margin-bottom: 5vh;
+}
+
+.char_right > a > img:hover{
+    opacity: 50%;
+    transition: .5s;
+    margin-bottom: 5vh;
+
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    text-align: center;
+    color: #FFF;
+}
+
+/* Lucia */
+
+#lucia{
+    height: 100vh;
+    background-color: #0B0B0E;
+    border-bottom: 2px solid #FFFBFA;
+}
+
+.char_photo{
+    width: 600px;
+    border-radius: 50%;
+}
+
+.lucia{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lucia_left, .lucia_right{
+    width: 50%;
+}
+
+.lucia_left{
+    display: flex;
+    justify-content: center;
+}
+
+.char_date{
+    padding-top: 1.5vh;
+}
+
+
+
+/* Jason */
+
+#jason{
+    height: 100vh;
+    background-color: #0B0B0E;
+    border-bottom: 2px solid #FFFBFA;
+}
+
+.char_photo{
+    width: 600px;
+    border-radius: 50%;
+}
+
+.jason{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jason_left, .jason_right{
+    width: 50%;
+}
+
+.jason_left{
+    display: flex;
+    justify-content: center;
+}
+
+.jason_right{
+    text-align: right;
+}
+
+.char_date{
+    padding-top: 1.5vh;
+}
+
+/* Footer */
+
+footer{
+    background-color: #0B0B0E;
+}
+
+.footer{
+}
+
+.line1{
+    height: fit-content;
+}
+
+.footer_menu > .line1 > a{
+    width: 150px 20px;
+}
+
+.footer_menu{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.line2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+}
+
+.line2 > .socials > a{
+    text-decoration: underline;
+    padding: 0 50px;
+}
+
+.line3{
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+#signature{
+    font-family: 'Pacifico', cursive;
+    font-weight: 300;
+    color: #F27DFD;
+    font-size: 1.5rem;
+}
